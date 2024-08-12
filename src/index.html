@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Cedro front test</title>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<a class="header-logo" href="/">
+				<img src="images/logo.svg">
+			</a>
+			<nav class="header-nav">
+				<ul>
+					<li>
+						<a href="/">играть</a>
+					</li>
+					<li>
+						<a href="/">смотреть</a>
+					</li>
+					<li>
+						<a href="/">учиться</a>
+					</li>
+					<li>
+						<a href="/">мероприятия</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="header-burger">
+				<img src="images/burger.svg">
+				<span>Меню</span>
+			</button>
+			<a class="header-profile" href="/">
+				<span class="profile-name">геннадий П.</span>
+				<span class="profile-photo">
+					<img src="images/profile.svg">
+				</span>
+			</a>
+		</div>
+	</header>
+	<section class="primary-section">
+		<div class="wrapper">
+			<picture>
+				<source srcset="images/primary-mobile.svg" media="(max-width: 576px)" />
+				<img class="primary-bg" src="images/play.webp" alt="" />
+			</picture>
+			<h1>Найди с кем поиграть в баскет</h1>
+			<div class="primary-links">
+				<a class="btn primary-btn current" data-bg="play" class="/">
+					<span>играй</span>
+					<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.3553 0V4.28571H0V10.7143H11.3553V15L22 7.5L11.3553 0Z" fill="white"/>
+					</svg>
+				</a>
+				<a class="btn primary-btn" data-bg="study" class="/">
+					<span>учись</span>
+					<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.3553 0V4.28571H0V10.7143H11.3553V15L22 7.5L11.3553 0Z" fill="white"/>
+					</svg>
+				</a>
+				<a class="btn primary-btn" data-bg="look" class="/">
+					<span>смотри</span>
+					<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.3553 0V4.28571H0V10.7143H11.3553V15L22 7.5L11.3553 0Z" fill="white"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="play-section">
+			<div class="wrapper">
+				<div class="title">
+					<h2>играй</h2>
+					<a class="link" href="/">
+						<span>в раздел</span>
+						<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.3553 0V4.28571H0V10.7143H11.3553V15L22 7.5L11.3553 0Z" fill="white"/>
+						</svg>
+					</a>
+				</div>
+				<div class="play-steps">
+					<div class="step-single">
+						<div class="image-box image-rounding">
+							<img src="images/play-find.svg" />
+						</div>
+						<h4>Найди себе<br>команду</h4>
+						<p>Игры на районе - это возможность найти с кем поиграть в баскетбол в выходные, или создать свою игру и пригласить других игроков присоединиться.</p>
+						<a class="btn current" href="/">
+							<span>играй</span>
+							<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.3553 0V4.28571H0V10.7143H11.3553V15L22 7.5L11.3553 0Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+					<div class="step-single">
+						<div class="image-box image-end">
+							<img src="images/play-create.svg" />
+						</div>
+						<h4>Создавай<br>команды</h4>
+						<p>Игры на районе - это возможность найти с кем поиграть в баскетбол в выходные, или создать свою игру и пригласить других игроков присоединиться.</p>
+						<a class="btn current" href="/">
+							<span>учись</span>
+							<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.3553 0V4.28571H0V10.7143H11.3553V15L22 7.5L11.3553 0Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+					<div class="step-single">
+						<div class="image-box image-rounding">
+							<img src="images/play-participation.svg" />
+						</div>
+						<h4>Участвуй<br>в турнирах</h4>
+						<p>Участвуйте в турнирах вместе с вашей командой. Будьте активными, побеждайте и получайте ачивки и&nbsp;призы от наших спонсоров.</p>
+						<a class="btn current" href="/">
+							<span>смотри</span>
+							<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.3553 0V4.28571H0V10.7143H11.3553V15L22 7.5L11.3553 0Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="news-section">
+		<div class="wrapper">
+			<div class="title">
+				<h2>Учись</h2>
+				<a class="link link-green" href="/">
+					<span>в раздел</span>
+					<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.3553 0V4.28571H0V10.7143H11.3553V15L22 7.5L11.3553 0Z" fill="white"/>
+					</svg>
+				</a>
+			</div>
+			<div class="news-content">
+				<div class="news-main">
+					<picture>
+						<source srcset="images/study-mobile.svg" media="(max-width: 768px)" />
+						<img class="footet-bg" src="images/study.webp" alt="" />
+					</picture>
+					<h3>мы собрали секции для детей по всему городу</h3>
+					<p><span>12</span>секций по всему городу</p>
+				</div>
+				<div class="news-arhive">
+					<h3>Подбери тренера под свой  уровень</h3>
+					<ul class="news-arhive__list">
+						<li>детская тренировка</li>
+						<li>для начинающих</li>
+						<li>стритбол</li>
+						<li>выезд тренера на дом</li>
+						<li class="filters-count"><span>12</span>фильтров</li>
+					</ul>
+				</div>
+			</div>
+			<div class="news-separador"></div>
+			<div class="news-siebar">
+				<div class="siebar-item sidebar-video">
+					<div class="sidebar-title">
+						<h5>Видеоуроки</h5>
+					</div>
+					<div class="video-info">
+						<div class="video-preview">
+							<img src="images/video-lesson.svg" />
+						</div>
+						<div class="video-content">
+							<h6>Евгений Воронов: «Бронзовые медали - оценка труда нашей команды»</h6>
+							<p class="post-date"><span>26</span>октября</p>
+						</div>
+					</div>
+				</div>
+				<div class="siebar-item sidebar-posts">
+					<div class="sidebar-title">
+						<a class="link link-green" href="/">
+							<span>в раздел</span>
+							<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.3553 0V4.28571H0V10.7143H11.3553V15L22 7.5L11.3553 0Z" fill="white"/>
+							</svg>
+						</a>
+					</div>
+					<div class="post-info">
+						<h6>Евгений Воронов: «Бронзовые медали - оценка труда нашей команды»</h6>
+						<p class="post-date"><span>26</span>октября</p>
+					</div>
+				</div>
+				<div class="siebar-item sidebar-terms">
+					<div class="sidebar-title">
+						<h5>термины</h5>
+					</div>
+					<ul class="terms-list">
+						<li>треха</li>
+						<li>трехочковый бросок</li>
+						<li class="terms-count"><span>36</span>терминов</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper">
+			<div class="footer-info">
+				<div class="title">
+					<h3 class="black">Еще больше полезных материалов и<br> видеоуроков в&nbsp;нашем приложении</h3>
+				</div>
+				<div class="download-apps">
+					<a href="/">
+						<img src="images/app-store.svg" />
+					</a>
+					<a href="/">
+						<img src="images/google-play.svg" />
+					</a>
+				</div>
+			</div>
+			<div class="footer-shortcode">
+				<img src="images/code.svg" />
+				<p class="code-title">iOS / Android</p>
+				<p class="code-instruction">Наведите камеру устройства на QR-код, чтобы скачать</p>
+			</div>
+			<div class="footer-bottom">
+				<a class="created" href="https://www.xpage.ru/" target="_blank">сделано в xpage</a>
+			</div>
+		</div>
+		<picture>
+			<source srcset="images/ball-small.svg" media="(max-width: 768px)" />
+			<img class="footet-bg" src="images/ball-lg.svg" alt="" />
+		</picture>
+	</footer>
+
+	<div class="overlay"></div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/main.min.js" defer></script>
+</body>
+</html>
